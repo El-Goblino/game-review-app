@@ -36,5 +36,5 @@ export default function Footer() {
 				<button className="text-white hover:text-red-400" onClick={ScrollTop}>Back to top ↑</button>
 			</div>
     </footer>
-  )
-}
+  );
+};
