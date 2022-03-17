@@ -15,24 +15,45 @@ function ToggleLinks() {
 
 export default function Header() {
   return (
-    <nav class=" w-full bg-neutral-400">
-      <div class="container flex items-center justify-between px-3 py-2.5">
-        <a class="text-2xl" href="/">Logo</a>
+    <nav class=" w-full bg-red-500 shadow-lg relative">
+      <div class="flex justify-between py-3.5 w-full px-3 md:w-2/3 md:px-0  m-auto">
+        {/* Logo */}
+        <a class="text-2xl font-semibold text-white hover:animate-pulse whitespace-nowrap"  href="/">GAME REVIEWS</a>
 
-        <div id="hamburger" onClick={ToggleLinks} class="mb-1 space-y-2 block md:hidden">
-          <div class="w-6 h-0.5 bg-black"></div>
-          <div class="w-6 h-0.5 bg-black"></div>
-          <div class="w-6 h-0.5 bg-black"></div>
+
+        <div class="flex"> {/* Container to prevent flex effecting both parents container */}
+          {/* Page links */}
+          <ul id="links" class="hidden flex-col lg:flex lg:flex-row">
+            <li class="mx-5">
+              <a class="text-2xl text-white border-none hover:border-solid border-b-2 border-white" href="/">Home</a>
+            </li>
+            <li class="mx-5">
+              <a class="text-2xl text-white border-none hover:border-solid border-b-2 border-white" href="/reviews">Reviews</a>
+            </li>
+          </ul>
+
+          <div class="flex">
+            {/* Search bar */}
+            <div class="text-black ml-5 py-0.5 lg:py-0 flex border border-gray-400 border-1 rounded-md bg-white px-1">
+              <input class="focus:outline-none" placeholder="Search"/>
+              
+              <div class="flex"> {/* Flex container to align the icon and bar */}
+                <button type="submit">
+                  <svg class="fill-current h-auto w-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> {/* ! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. */}
+                    <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Hamburger */}
+          <div id="hamburger" onClick={ToggleLinks} class="space-y-2 ml-5 mt-1.5 block cursor-pointer lg:hidden">
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+          </div>
         </div>
-
-        <ul id="links" class="hidden md:flex">
-          <li class="mx-1">
-            <a class="text-2xl" href="/">Home</a>
-          </li>
-          <li class="mx-1">
-            <a class="text-2xl" href="/reviews">Reviews</a>
-          </li>
-        </ul>
       </div>
     </nav>
   )

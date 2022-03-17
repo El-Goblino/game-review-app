@@ -9,12 +9,12 @@ html {
 :root {
   font-size: 16px; 
   font-family: 'arial', sans-serif;
-  --primary-colour: ;
+  --primary-colour: #ef4444;
   --secondary-colour: ;
   --tertiary-colour: ;
-  --quaternary-colour: ;
+  --quaternary-colour: rgba(0, 0, 0, 0.233);
   --quinary-colour: ; 
-  --primary-text-colour: ; 
+  --primary-text-colour: #000000; 
   --secondary-text-colour: ;
   --tertiary-text-colour: ;
   --quaternary-text-colour: ;
@@ -33,7 +33,7 @@ body {
 }
 
 body::-webkit-scrollbar { 
-  width: 0.25rem;
+  width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track { 
@@ -113,7 +113,7 @@ img {
 }
 
 input, textarea {
-  font-family: '', sans-serif;
+  font-family: 'arial', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: var(--primary-text-colour);
