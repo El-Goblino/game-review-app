@@ -1,7 +1,8 @@
 import * as React from 'react';
+import Hero from './hero';
 
 export default function Index() {
     return (
-        <h1>Body</h1>
+        <Hero />
     );
 }
