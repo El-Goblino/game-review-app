@@ -32,7 +32,6 @@ export default function Header() {
             </li>
           </ul>
 
-          <div class="flex">
             {/* Search bar */}
             <div class="text-black ml-5 py-0.5 lg:py-0 flex border border-gray-400 border-1 rounded-md bg-white px-1">
               <input class="focus:outline-none" placeholder="Search"/>
@@ -44,7 +43,6 @@ export default function Header() {
                   </svg>
                 </button>
               </div>
-            </div>
           </div>
 
           {/* Hamburger */}
