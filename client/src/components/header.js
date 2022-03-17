@@ -23,11 +23,11 @@ export default function Header() {
 
         <div class="flex"> {/* Container to prevent flex effecting both parents container */}
           {/* Page links */}
-          <ul id="links" class="hidden flex-col lg:flex lg:flex-row">
-            <li class="mx-5">
+          <ul id="links" class="hidden h-40 lg:h-auto flex-col lg:flex lg:flex-row absolute lg:relative mt-10 lg:mt-0 right-0 lg:right-auto px-10 lg:px-0 bg-red-500 rounded-lg lg:rounded-none shadow-sm lg:shadow-none">
+            <li class="m-5 lg:my-0 lg:mx-5">
               <a class="text-2xl text-white border-none hover:border-solid border-b-2 border-white" href="/">Home</a>
             </li>
-            <li class="mx-5">
+            <li class="m-5 lg:my-0 lg:mx-5">
               <a class="text-2xl text-white border-none hover:border-solid border-b-2 border-white" href="/reviews">Reviews</a>
             </li>
           </ul>
@@ -48,7 +48,7 @@ export default function Header() {
           </div>
 
           {/* Hamburger */}
-          <div id="hamburger" onClick={ToggleLinks} class="space-y-2 ml-5 mt-1.5 block cursor-pointer lg:hidden">
+          <div id="hamburger" onClick={ToggleLinks} class=" space-y-2 ml-5 mt-1.5 block cursor-pointer lg:hidden">
             <div class="w-6 h-0.5 bg-white"></div>
             <div class="w-6 h-0.5 bg-white"></div>
             <div class="w-6 h-0.5 bg-white"></div>
