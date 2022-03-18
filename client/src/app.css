@@ -10,7 +10,7 @@ html {
   font-size: 16px; 
   font-family: 'arial', sans-serif;
   --primary-colour: #ef4444;
-  --secondary-colour: ;
+  --secondary-colour: rgba(0, 0, 0, 0.05);
   --tertiary-colour: ;
   --quaternary-colour: rgba(0, 0, 0, 0.233);
   --quinary-colour: ; 
