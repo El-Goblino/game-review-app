@@ -2,12 +2,12 @@ import * as React from 'react';
 
 export default function RecentReviews() {
     return (
-        <div class="mx-1">
-            <h3 class="bg-red-500 font-bold text-white my-5 px-4 py-0.5">Recent Reviews</h3>
+        <div class="mx-1 lg:w-[60%] lg:m-auto">
+            <h3 class="bg-red-500 font-bold text-white my-5 lg:my-0 px-4 py-0.5">Recent Reviews</h3>
 
             <div class="lg:grid grid-cols-3 grid-row-2">
                 {/* Article */}
-                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
+                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0  my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
                     {/* Thumbnail */}
                     <a href="#" class="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm"><img src="./images/elden-ring-thumbnail.jpg" alt="Lorem Impsum"></img></a>
 
@@ -19,7 +19,7 @@ export default function RecentReviews() {
                 </div>
 
                 {/* Article */}
-                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
+                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
                     {/* Thumbnail */}
                     <a href="#" class="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm"><img src="./images/elden-ring-thumbnail.jpg" alt="Lorem Impsum"></img></a>
 
@@ -31,7 +31,7 @@ export default function RecentReviews() {
                 </div>
 
                 {/* Article */}
-                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
+                   <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
                     {/* Thumbnail */}
                     <a href="#" class="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm"><img src="./images/elden-ring-thumbnail.jpg" alt="Lorem Impsum"></img></a>
 
@@ -43,7 +43,7 @@ export default function RecentReviews() {
                 </div>
 
                 {/* Article */}
-                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
+                    <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
                     {/* Thumbnail */}
                     <a href="#" class="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm"><img src="./images/elden-ring-thumbnail.jpg" alt="Lorem Impsum"></img></a>
 
@@ -55,7 +55,7 @@ export default function RecentReviews() {
                 </div>
 
                 {/* Article */}
-                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
+                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
                     {/* Thumbnail */}
                     <a href="#" class="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm"><img src="./images/elden-ring-thumbnail.jpg" alt="Lorem Impsum"></img></a>
 
@@ -67,7 +67,7 @@ export default function RecentReviews() {
                 </div>
 
                 {/* Article */}
-                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
+                <div class="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
                     {/* Thumbnail */}
                     <a href="#" class="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm"><img src="./images/elden-ring-thumbnail.jpg" alt="Lorem Impsum"></img></a>
 
