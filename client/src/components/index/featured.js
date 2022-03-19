@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 //Maps element based on the number of json objects
 const content = [
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1'},
 ];
 
 const items = content.map((content) =>

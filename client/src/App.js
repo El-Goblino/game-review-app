@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './app.css';
 import { Routes, Route } from "react-router-dom";
-import Header from './components/header';
+import Header from './components/header/header';
 import Footer from './components/footer';
 import Error from './components/error';
 import Index from './components/index/index';
