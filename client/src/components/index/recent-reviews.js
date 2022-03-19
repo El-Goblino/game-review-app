@@ -22,7 +22,7 @@ const items = content.map((content) =>
 
 export default function RecentReviews() {
     return (
-        <div class="mx-1 lg:w-[60%] lg:m-auto">
+        <div class="mx-2 lg:w-[60%] lg:m-auto pb-10 pt-0.5 md:pb-20 bg-neutral-200 px-3">
             <h3 class="bg-red-500 font-bold text-white my-5 lg:my-0 px-4 py-0.5">Recent Reviews</h3>
 
             <div class="lg:grid grid-cols-3 grid-row-2">
