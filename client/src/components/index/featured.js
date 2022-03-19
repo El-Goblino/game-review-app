@@ -1,16 +1,19 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 
 //Maps element based on the number of json objects
 const content = [
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1'},
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
 ];
 
 const items = content.map((content) =>
-    <div id="thumbnail" class="my-1 px-5 md:px-0 flex flex-col">
-        <img src={content.image} alt="Lorem Ipsum"></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
-        <h6 class="bg-neutral-900 text-white py-1 px-2 font-semibold">{content.heading}</h6>
-    </div>
+    <Link to={content.link}>
+        <div id="thumbnail" class="my-1 px-5 md:px-0 flex flex-col">
+            <img src={content.image} alt="Lorem Ipsum"></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
+            <h6 class="bg-neutral-900 text-white py-1 px-2 font-semibold">{content.heading}</h6>
+        </div>
+    </Link>
 );
 
 export default function Featured() {

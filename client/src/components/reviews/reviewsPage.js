@@ -1,23 +1,31 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 
 //Maps element based on the number of json objects
 const content = [
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1', 'text': 'text1'},
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1', 'text': 'text1'},
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1', 'text': 'text1'},
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1', 'text': 'text1'},
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1', 'text': 'text1'},
-    {'image': './images/elden-ring-thumbnail.jpg', 'heading': 'text1', 'text': 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
+    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
 ];
 
 const items = content.map((content) =>
-    <div id="thumbnail" class="flex flex-row py-4 px-3 bg-white border-b-2 border-red-300 space-x-4">
-        <a href="#" class="w-2/5 sm:w-1/3 lg:mr-0 rounded-sm"><img src={content.image} alt="Lorem Impsum"></img></a>
-        <div class="md:flex md:flex-col space-y-2">
-            <h5 class="font-bold ">{content.heading}</h5>
-            <p>{content.text}</p>
-        </div>
-    </div>
+    <Link to={content.link}>
+        <a href={content.link}>
+            <div id="thumbnail" class="flex flex-row py-4 px-3 bg-white border-b-2 border-red-300 space-x-4">
+                <a href="#" class="w-2/5 sm:w-1/3 lg:mr-0 rounded-sm"><img src={content.image} alt="Lorem Impsum"></img></a>
+                <div class="md:flex md:flex-col space-y-2">
+                    <h5 class="font-bold ">{content.heading}</h5>
+                    <p>{content.text}</p>
+                </div>
+            </div>
+        </a>
+    </Link>
 );
 
 export default function ReviewsPage() {
