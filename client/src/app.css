@@ -122,3 +122,9 @@ input, textarea {
 input::placeholder, textarea::placeholder {
   color: var(--primary-text-colour);
 }
+
+/* Added as custom as accessing child from parent is difficult in tailwind */
+#thumbnail:hover h5, #thumbnail:hover h6 {
+  color: rgb(239 68 68);
+  ;
+} 
