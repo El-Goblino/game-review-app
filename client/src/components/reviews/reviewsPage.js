@@ -20,7 +20,7 @@ const items = content.map((content) =>
     </div>
 );
 
-export default function Reviews() {
+export default function ReviewsPage() {
     return(
         <div class="mx-2 my-16 lg:w-[60%] lg:m-auto pt-0.5 lg:py-16 sm:px-3 bg-neutral-200 ">
             <h3 class="bg-red-500 font-bold text-white px-4 py-0.5">Reviews</h3>

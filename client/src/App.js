@@ -5,7 +5,8 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Error from './components/error';
 import Index from './components/index/index';
-import Reviews from './components/reviews/reviews';
+import ReviewsPage from './components/reviews/reviewsPage';
+import Review from './components/reviews/review';
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
       
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/review/:id" element={<Review />} />
         <Route path="*" element={<Error />} />
       </Routes>
 
