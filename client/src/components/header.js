@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 function ToggleLinks() {
-  let hamburger = document.getElementById('hamburger');
   let links = document.getElementById('links');
 
   if (window.getComputedStyle(links).display === 'none') {
