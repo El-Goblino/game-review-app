@@ -13,7 +13,7 @@ html {
   --secondary-colour: rgba(0, 0, 0, 0.05);
   --tertiary-colour: ;
   --quaternary-colour: rgba(0, 0, 0, 0.233);
-  --quinary-colour: ; 
+  --quinary-colour: rgba(0, 0, 0, 0.3); 
   --primary-text-colour: #000000; 
   --secondary-text-colour: ;
   --tertiary-text-colour: ;
@@ -34,6 +34,7 @@ body {
 
 body::-webkit-scrollbar { 
   width: 0.6rem;
+  border: 1px solid var(--quinary-colour);
 }
 
 body::-webkit-scrollbar-track { 
@@ -42,6 +43,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb { 
   background: var(--primary-colour);
+  border: 1px solid var(--quinary-colour);
 }
 
 h1 {

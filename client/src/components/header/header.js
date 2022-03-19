@@ -15,13 +15,13 @@ function ToggleLinks() {
 
 export default function Header() {
   return (
-    <nav class=" w-full bg-red-500 shadow-lg relative">
+    <nav class=" w-full bg-red-500 shadow-lg relative max-h-[4.1rem]"> {/* Max height set to avoid search suggestions increasing header size */}
       <div class="flex justify-between py-3.5 w-full px-3 md:w-2/3 md:px-0  m-auto">
         {/* Logo */}
         <a class="text-2xl font-semibold text-white hover:animate-pulse whitespace-nowrap"  href="/">GAME REVIEWS</a>
 
 
-        <div class="flex"> {/* Container to prevent flex effecting both parents container */}
+        <div class="flex max-h-[3rem]"> {/* Container to prevent flex effecting both parents container */}
           {/* Page links */}
           <ul id="links" class="hidden h-40 lg:h-auto flex-col lg:flex lg:flex-row absolute lg:relative mt-10 lg:mt-0 right-0 lg:right-auto px-10 lg:px-0 bg-red-500 rounded-lg lg:rounded-none shadow-sm lg:shadow-none">
             <li class="m-5 lg:my-0 lg:mx-5">
