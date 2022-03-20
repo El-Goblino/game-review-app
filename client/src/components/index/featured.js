@@ -18,7 +18,7 @@ const items = content.map((content) =>
 
 export default function Featured() {
     return (
-        <div class="items-center xs:mx-2 md:w-4/5 lg:w-3/5 m-auto bg-neutral-200 md:px-5">
+        <div class="items-center xs:mx-2 bg-neutral-200 md:px-5">
             <h1 class="font-bold text-white mt-5 md:mt-9 bg-red-500 px-5 mx-1 md:px-3 md:m-auto">Featured</h1>
             {/* Thumbnails */}
             <div class="flex flex-col md:mt-5">

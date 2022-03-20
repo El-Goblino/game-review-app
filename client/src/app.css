@@ -148,8 +148,11 @@ input::placeholder, textarea::placeholder {
   color: var(--primary-text-colour);
 }
 
-/* Added as custom as accessing child from parent is difficult in tailwind */
+/* Added as customs as accessing child from parent is difficult in tailwind */
 #thumbnail:hover h5, #thumbnail:hover h6 {
-  color: rgb(239 68 68);
-  ;
+  color: var(--primary-colour);
 } 
+
+#articleReturn:hover svg {
+  fill: var(--primary-colour)
+}

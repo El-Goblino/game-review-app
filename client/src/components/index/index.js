@@ -8,9 +8,11 @@ export default function Index() {
     return (
         <>
             <Hero />
-            <Disclaimer />
-            <Featured />
-            <RecentReviews />
+            <div class="md:w-4/5 lg:w-3/5 mx-auto">
+                <Disclaimer />
+                <Featured />
+                <RecentReviews />
+            </div>
         </>
     );
 };
