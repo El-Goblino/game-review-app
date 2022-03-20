@@ -22,10 +22,12 @@ export default function Article(props) {
             {/* Scores */}
             <div className="flex flex-row items-center justify-between px-10 pt-5 border-t-2 border-red-500">
                 <a title="CBS Interactive, Public domain, via Wikimedia Commons" href={props.metacritic}> 
+                    {/* Attribution: https://commons.wikimedia.org/wiki/File:Metacritic_logo.svg */}
                     <img  
                         className="w-1/2" 
-                        alt="Metacritic logo" 
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Metacritic_logo.svg/512px-Metacritic_logo.svg.png"> {/* Attribution: https://commons.wikimedia.org/wiki/File:Metacritic_logo.svg */}
+                        alt="Metacritic logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Metacritic_logo.svg/512px-Metacritic_logo.svg.png"
+                    >
                     </img> 
                 </a>
 
@@ -34,10 +36,12 @@ export default function Article(props) {
 
             <div className="flex flex-row items-center justify-between px-10">
                 <a title="Unknown authorUnknown author, Public domain, via Wikimedia Commons" href={props.steam}>
+                    {/* Attribution: https://commons.wikimedia.org/wiki/File:Steam_logo.svg */}
                     <img 
                         className="w-1/2" 
                         alt="Steam logo" 
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Steam_logo.svg/512px-Steam_logo.svg.png"> {/* Attribution: https://commons.wikimedia.org/wiki/File:Steam_logo.svg */}
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Steam_logo.svg/512px-Steam_logo.svg.png"
+                    >
                     </img> 
                 </a>
 
