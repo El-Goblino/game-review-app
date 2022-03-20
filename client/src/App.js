@@ -11,7 +11,6 @@ import Review from './components/reviews/review';
 export default function App() {
   return (
     <>
-      <ProgressBar />
       <Header />
       
       <Routes>
