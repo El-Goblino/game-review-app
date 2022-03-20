@@ -1,13 +1,7 @@
 import * as React from 'react';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-const content = [
-  { link: "/review/elden-ring", name: "Elden\nRing" },
-  { link: "/review/title-1", name: "defg" },
-  { link: "/review/title-2", name: "ghij" },
-  { link: "/review/title-3", name: "jklm" }
-];
+import { content } from "../reviews";
 
 export default function Search(props) {
   //For storing and setting search input
@@ -30,6 +24,7 @@ export default function Search(props) {
           }}
         />
 
+        {/* Search Button */}
         {/* Flex container to align the icon and bar */}
         <div className="flex mt-1.5">
           <Link to={{ pathname: "/results/" + query }}>
@@ -51,6 +46,7 @@ export default function Search(props) {
       <div className="ml-5 px-0.5">
         {/* Query must have length to prevent mapping by default */}
         {query.length > 0 && content
+            //Filter through JSON
             .filter((content) => {
               //If input return object
               if (query === "") {
@@ -66,7 +62,7 @@ export default function Search(props) {
 
               return null;
             })
-            //Maps element based on the number of json objects
+            //Maps element based on the number of JSON objects
             .map((content) => {
               return (
                 <div className="bg-white rounded-sm">
@@ -75,7 +71,8 @@ export default function Search(props) {
                   </Link>
                 </div>
               );
-            })};
+            })
+          };
       </div>
     </div>
   );

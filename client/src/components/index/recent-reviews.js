@@ -10,7 +10,7 @@ export default function RecentReviews() {
                 {/* Review thumbnail */}
                 <div id="thumbnail" className="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
                     <a href="#" className="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm">
-                        <img src={content.image} alt="Lorem Impsum"></img>
+                        <img src={content.image} alt="Review thumbnail"></img>
                     </a>
 
                     <div className="md:flex md:flex-col lg:px-3">

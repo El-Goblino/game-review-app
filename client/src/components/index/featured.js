@@ -8,7 +8,7 @@ export default function Featured() {
         index < 2 && (
             <Link to={content.link}>
                 <div id="thumbnail" className="my-1 px-5 md:px-0 flex flex-col">
-                    <img src={content.image} alt="Lorem Ipsum"></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
+                    <img src={content.image} alt="Review thumbnail"></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
                     <h6 className="bg-neutral-900 text-white py-1 px-2 font-semibold">{content.heading}</h6>
                 </div>
             </Link>

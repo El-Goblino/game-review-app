@@ -18,9 +18,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/reviews" element={<ReviewsPage />} />
-        {/* Render review with ID for switch statment */}
-        <Route path="/review/:id" element={<Review />} />
-        <Route path="/results/:search" element={<Results />} />
+        <Route path="/review/:id" element={<Review />} /> {/* ID for switch statment */}
+        <Route path="/results/:id" element={<Results />} /> {/* ID displaying input */}
         <Route path="*" element={<Error />} />
       </Routes>
 

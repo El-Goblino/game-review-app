@@ -9,7 +9,9 @@ export default function ReviewsPage() {
             <Link to={content.link}>
                 <a href={content.link}>
                     <div id="thumbnail" className="flex flex-row py-4 px-3 bg-white border-b-2 border-red-300 space-x-4">
-                        <a href="#" className="w-2/5 sm:w-1/3 lg:mr-0 rounded-sm"><img src={content.image} alt="Lorem Impsum"></img></a>
+                        <Link to={content.link} className="w-2/5 sm:w-1/3 lg:mr-0 rounded-sm">
+                            <img src={content.image} alt="Review thumbnail"></img>
+                        </Link>
                         <div className="md:flex md:flex-col space-y-2">
                             <h5 className="font-bold ">{content.heading}</h5>
                             <p>{content.text}</p>

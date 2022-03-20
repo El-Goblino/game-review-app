@@ -6,7 +6,7 @@ import Article from './article';
 
 export default function Review() {
 
-    //Gets id from URL
+    //Extracts ID from URL
     const {id} = useParams();
 
     //Cases for id
