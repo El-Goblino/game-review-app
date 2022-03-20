@@ -70,7 +70,7 @@ export default function Search(props) {
             .map((content) => {
               return (
                 <div className="bg-white rounded-sm">
-                  <Link to={`review/${query}`} onClick={() => setQuery(() => "")}>
+                  <Link to={content.link} onClick={() => setQuery(() => "")}>
                     <p>{content.name}</p>
                   </Link>
                 </div>

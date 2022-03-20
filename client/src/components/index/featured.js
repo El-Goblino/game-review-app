@@ -27,7 +27,7 @@ export default function Featured() {
                     </div>
                 </a>
 
-                <div className="md:flex md:flex-row md:m-auto md:my-4 md:justify-center md:space-x-3" key={items}>{items}</div>div>
+                <div className="md:flex md:flex-row md:m-auto md:my-4 md:justify-center md:space-x-3" key={items}>{items}</div>
             </div>
         </div>
     );
