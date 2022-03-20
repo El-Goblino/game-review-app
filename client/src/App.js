@@ -10,7 +10,8 @@ import Review from './components/reviews/review';
 
 export default function App() {
   return (
-    <div>
+    <>
+      <ProgressBar />
       <Header />
       
       <Routes>
@@ -22,6 +23,6 @@ export default function App() {
       </Routes>
 
       <Footer />
-    </div>
+    </>
   );
 };
