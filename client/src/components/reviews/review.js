@@ -29,6 +29,7 @@ export default function Review() {
 
                         steam={"https://store.steampowered.com/app/1245620/ELDEN_RING/"}
                         steamScore={"Very Positive"}
+                        
                         score={"00"}
                     /> 
                 </>

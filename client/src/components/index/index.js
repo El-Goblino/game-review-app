@@ -8,7 +8,7 @@ export default function Index() {
     return (
         <>
             <Hero />
-            <div class="md:w-4/5 lg:w-3/5 mx-auto">
+            <div className="md:w-4/5 lg:w-3/5 mx-auto">
                 <Disclaimer />
                 <Featured />
                 <RecentReviews />
