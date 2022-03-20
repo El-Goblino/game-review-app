@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Article(props) {
     return (
-        <div class="my-5 mx-auto px-5 space-y-5 flex flex-col md:w-4/5 lg:w-3/5"> 
+        <div class="py-5 md:py-10 mx-auto px-5 space-y-5 flex flex-col md:w-4/5 lg:w-3/5 bg-neutral-200"> 
             {/* Return */}
             <div id="articleReturn" class="flex flex-row space-x-2">
                 <Link to="/" class="text-red-500">Home</Link>
@@ -14,32 +14,32 @@ export default function Article(props) {
             </div>
 
             <p>{props.paragraphOne}</p>
-            <img src={props.imageOne} alt="Elden ring gameplay" class=""></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
+            <img src={props.imageOne} alt="Article game thumbnail"></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
 
             <p>{props.paragraphTwo}</p>
-            <img src={props.imageTwo} alt="Elden ring gameplay" class=""></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
+            <img src={props.imageTwo} alt="Article game thumbnail"></img> {/* Attribution: https://www.trustedreviews.com/news/is-sure-sounds-like-elden-ring-will-be-adapted-for-tv-or-movies-4218187 */}
 
             {/* Scores */}
             <div class="flex flex-row items-center justify-between px-10 pt-5 border-t-2 border-red-500">
-                <a title="CBS Interactive, Public domain, via Wikimedia Commons" href="https://www.metacritic.com/game/pc/elden-ring"> 
+                <a title="CBS Interactive, Public domain, via Wikimedia Commons" href={props.metacritic}> 
                     <img  class="w-1/2" alt="Metacritic logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Metacritic_logo.svg/512px-Metacritic_logo.svg.png"></img> {/* Attribution: https://commons.wikimedia.org/wiki/File:Metacritic_logo.svg */}
                 </a>
 
-                <h2 class="bg-green-500 text-white py-1.5 px-3 rounded-md">96</h2>
+                <h2 class="bg-green-500 text-white py-1.5 px-3 rounded-md">{props.metacriticScore}</h2>
             </div>
 
             <div class="flex flex-row items-center justify-between px-10">
-                <a title="Unknown authorUnknown author, Public domain, via Wikimedia Commons" href="https://store.steampowered.com/app/1245620/ELDEN_RING/">
+                <a title="Unknown authorUnknown author, Public domain, via Wikimedia Commons" href={props.steam}>
                     <img class="w-1/2" alt="Steam logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Steam_logo.svg/512px-Steam_logo.svg.png"></img> {/* Attribution: https://commons.wikimedia.org/wiki/File:Steam_logo.svg */}
                 </a>
 
-                <h2 class="bg-green-500 text-white py-1.5 px-3 rounded-md whitespace-nowrap">Very Positive</h2>
+                <h2 class="bg-green-500 text-white py-1.5 px-3 rounded-md whitespace-nowrap">{props.steamScore}</h2>
             </div>
 
             <div class="flex flex-row items-center justify-between px-10 pb-5 border-b-2 border-red-500">
                 <h1 class="font-bold hover:text-red-500">My Score:</h1>
 
-                <h2 class="bg-green-500 text-white py-1.5 px-3 rounded-md">00</h2>
+                <h2 class="bg-green-500 text-white py-1.5 px-3 rounded-md">{props.score}</h2>
             </div>
 
 
