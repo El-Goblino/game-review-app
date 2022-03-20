@@ -62,6 +62,7 @@ export default function Search(props) {
 
               return null;
             })
+            
             //Maps element based on the number of JSON objects
             .map((content) => {
               return (
