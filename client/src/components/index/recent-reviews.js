@@ -1,30 +1,24 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
+import { content } from '../reviews';
 
-//Maps element based on the number of json objects
-const content = [
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
-    {link: "/review/elden-ring", image: './images/elden-ring-thumbnail.jpg', heading: 'text1', text: 'text1'},
-];
+//Maps element based on index
+const items = content.map((content, index) =>
+    index < 6 && (
+        <Link to={content.link}>
+            {/* Review thumbnail */}
+            <div id="thumbnail" className="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
+                <a href="#" className="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm">
+                    <img src={content.image} alt="Lorem Impsum"></img>
+                </a>
 
-const items = content.map((content) =>
-    <Link to={content.link}>
-        {/* Review thumbnail */}
-        <div id="thumbnail" className="flex flex-row lg:flex-col mx-5 lg:mx-2 lg:mt-0 my-5 pb-5 items-center md:items-start lg:bg-white border-b-2 border-red-300">
-            <a href="#" className="w-[26%] lg:w-full mr-5 lg:mr-0 rounded-sm">
-                <img src={content.image} alt="Lorem Impsum"></img>
-            </a>
-
-            <div className="md:flex md:flex-col lg:px-3">
-                <h6 className="font-bold lg:my-3">{content.heading}</h6>
-                <p className="hidden md:block my-2 lg:my-0">{content.text}</p>
+                <div className="md:flex md:flex-col lg:px-3">
+                    <h6 className="font-bold lg:my-3">{content.heading}</h6>
+                    <p className="hidden md:block my-2 lg:my-0">{content.text}</p>
+                </div>
             </div>
-        </div>
-    </Link>
+        </Link>
+    )
 );
 
 export default function RecentReviews() {
