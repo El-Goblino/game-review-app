@@ -50,8 +50,7 @@ export default function Search(props) {
       {/* Search Suggestions */}
       <div className="ml-5 px-0.5">
         {/* Query must have length to prevent mapping by default */}
-        {query.length > 0 &&
-          content
+        {query.length > 0 && content
             .filter((content) => {
               //If input return object
               if (query === "") {
@@ -68,9 +67,9 @@ export default function Search(props) {
               return null;
             })
             //Maps element based on the number of json objects
-            .map((content, index) => {
+            .map((content) => {
               return (
-                <div className="bg-white rounded-sm" key={index}>
+                <div className="bg-white rounded-sm">
                   <Link to={`review/${query}`} onClick={() => setQuery(() => "")}>
                     <p>{content.name}</p>
                   </Link>
