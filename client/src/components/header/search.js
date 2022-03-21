@@ -2,10 +2,21 @@ import * as React from 'react';
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { content } from "../reviews";
-
-export default function Search(props) {
+import { useNavigate } from "react-router-dom";
+ 
+export default function Search() {
   //For storing and setting search input
   const [query, setQuery] = useState("");
+  let navigate = useNavigate();
+
+  function submitHandler() {
+    //If user hasnt searched anything on submit
+    if (query.length === 0) {
+      alert('Search bar is empty. Please enter a value to search.');
+    } else {
+      navigate(`/results/${query}`)
+    }
+  }
 
   return (
     //Search input
@@ -27,8 +38,8 @@ export default function Search(props) {
         {/* Search Button */}
         {/* Flex container to align the icon and bar */}
         <div className="flex mt-1.5">
-          <Link to={{ pathname: "/results/" + query }}>
-            <button type="submit" onClick={() => setQuery(() => "")}>
+          <Link to={query.length === 0 ? "" : `/results/${query}`}>
+            <button type="submit" onClick={submitHandler}>
               <svg
                 className="fill-current h-auto w-4 "
                 xmlns="http://www.w3.org/2000/svg"
